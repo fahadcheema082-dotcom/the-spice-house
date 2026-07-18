@@ -126,29 +126,6 @@ contactForm.addEventListener("submit", function (e) {
 
 
 // ============================================
-// 6. ORDER NOW BUTTON ALERT
-// Dish order karne par message
-// ============================================
-
-const orderButtons = document.querySelectorAll(".dish-btn");
-
-orderButtons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    // Kis dish ka button click hua uska name nikalo
-    const dishCard = button.closest(".dish-card");
-    const dishName = dishCard.querySelector("h3").textContent;
-    const dishPrice = dishCard.querySelector(".dish-price").textContent;
-
-    alert(
-      "🍽️ " + dishName + " added to your order!\n\n" +
-      "Price: " + dishPrice + "\n\n" +
-      "Our team will contact you shortly. 🎉"
-    );
-  });
-});
-
-
-// ============================================
 // 7. NEWSLETTER FORM SUBMIT
 // Footer wala newsletter form
 // ============================================
@@ -250,15 +227,7 @@ cartOverlay.addEventListener("click", closeCart);
 // ============================================
 // ADD ITEM TO CART (Order Now Button)
 // ============================================
-// Purana orderButtons wala code REPLACE karna hai isse!
-const allOrderButtons = document.querySelectorAll(".dish-btn");
-
-allOrderButtons.forEach(function (button) {
-  // Purane event listeners hata do
-  button.replaceWith(button.cloneNode(true));
-});
-
-// Naye buttons pe listeners lagao
+// Cart System - Order Now Buttons (Clean Version)
 document.querySelectorAll(".dish-btn").forEach(function (button) {
   button.addEventListener("click", function () {
     // Dish ka data nikalo
