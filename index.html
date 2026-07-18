@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- SEO Meta Tags -->
+    <title>The Spice House - Authentic Fine Dining Restaurant | Reserve Now</title>
+    <meta name="description" content="Experience authentic flavors at The Spice House. Premium dining with expert chefs, fresh ingredients, and cozy atmosphere. Reserve your table today!" />
+    <meta name="keywords" content="restaurant, fine dining, spice house, authentic food, reservation, chef, cuisine" />
+    <meta name="author" content="Fahad Cheema" />
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="The Spice House - Authentic Fine Dining" />
+    <meta property="og:description" content="Experience premium dining with authentic flavors" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon (Emoji as icon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+        <!-- ============================================
+         LOADING SCREEN
+    ============================================= -->
+    <div class="loader" id="loader">
+      <div class="loader-content">
+        <div class="loader-icon">
+          <i class="fas fa-utensils"></i>
+        </div>
+        <h2>The Spice House</h2>
+        <div class="loader-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <i class="fas fa-utensils"></i>
+          <span>The Spice House</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#features" class="nav-link">Why Us</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+                <!-- Theme Toggle Button -->
+        <div class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+          <i class="fas fa-moon"></i>
+        </div>
+                <!-- Cart Icon -->
+        <div class="cart-icon" id="cartIcon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </div>
+
+        <button class="nav-btn" id="reserveBtn1">Reserve Now</button>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="hero-subtitle">
+          <i class="fas fa-star"></i>
+          Welcome to The Spice House
+          <i class="fas fa-star"></i>
+        </p>
+
+       <h1 class="hero-title">
+      Experience <span class="typewriter" id="typewriter">Authentic</span> Taste
+     </h1>
+
+        <p class="hero-description">
+          Discover the rich flavors of traditional cuisine crafted by
+          our expert chefs. Every bite tells a story of passion,
+          tradition, and culinary excellence.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="reserveBtn2">
+            <i class="fas fa-calendar-check"></i>
+             Reserve Table
+        </button>
+          <a href="#menu" class="btn btn-secondary">
+            <i class="fas fa-utensils"></i>
+            View Menu
+          </a>
+        </div>
+
+        <div class="scroll-down">
+          <a href="#about">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+        <!-- ============================================
+         ABOUT SECTION
+    ============================================= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: Image -->
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
+              alt="Our Restaurant"
+            />
+            <div class="about-badge">
+              <i class="fas fa-award"></i>
+              <div>
+                <h3>25+</h3>
+                <p>Years Experience</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Text -->
+          <div class="about-content">
+            <span class="section-tag">About Us</span>
+            <h2 class="section-title">
+              Our <span>Story</span> Of Culinary Excellence
+            </h2>
+            <p class="about-text">
+              Welcome to The Spice House, where tradition meets
+              innovation. For over two decades, we have been serving
+              authentic flavors that celebrate the rich culinary
+              heritage of our culture.
+            </p>
+            <p class="about-text">
+              Our expert chefs use only the finest ingredients,
+              handpicked spices, and time-honored recipes to create
+              unforgettable dining experiences for our valued guests.
+            </p>
+
+            <!-- Stats -->
+            <div class="about-stats">
+             <div class="stat-item">
+          <h3 class="counter" data-target="500">0</h3>
+          <p>Happy Customers</p>
+         </div>
+         <div class="stat-item">
+        <h3 class="counter" data-target="50">0</h3>
+       <p>Menu Varieties</p>
+     </div>
+       <div class="stat-item">
+  <h3 class="counter" data-target="15">0</h3>
+  <p>Expert Chefs</p>
+       </div>
+            </div>
+
+            <a href="#menu" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- ============================================
+         MENU / FEATURED DISHES SECTION
+    ============================================= -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Our Menu</span>
+          <h2 class="section-title">
+            Featured <span>Dishes</span>
+          </h2>
+          <p class="section-description">
+            Explore our chef's special selections crafted with love,
+            passion and the finest ingredients from around the world.
+          </p>
+        </div>
+                <!-- ============================================
+             SEARCH & FILTER BAR
+        ============================================= -->
+        <div class="menu-controls">
+          <!-- Search Bar -->
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search for your favorite dish..."
+            />
+            <button class="search-clear" id="searchClear">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+              <i class="fas fa-utensils"></i>
+              All Dishes
+            </button>
+            <button class="filter-btn" data-filter="popular">
+              <i class="fas fa-fire"></i>
+              Popular
+            </button>
+            <button class="filter-btn" data-filter="new">
+              <i class="fas fa-star"></i>
+              New
+            </button>
+            <button class="filter-btn" data-filter="hot">
+              <i class="fas fa-pepper-hot"></i>
+              Hot
+            </button>
+            <button class="filter-btn" data-filter="healthy">
+              <i class="fas fa-leaf"></i>
+              Healthy
+            </button>
+            <button class="filter-btn" data-filter="sweet">
+              <i class="fas fa-ice-cream"></i>
+              Sweet
+            </button>
+          </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="noResults">
+          <i class="fas fa-search"></i>
+          <h3>No Dishes Found</h3>
+          <p>Try a different search or filter</p>
+        </div>
+
+        <!-- Dishes Grid -->
+        <div class="dishes-grid">
+          <!-- Dish 1 -->
+          <div class="dish-card" data-category="popular">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500"
+                alt="Margherita Pizza"
+              />
+              <span class="dish-badge">Popular</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-header">
+                <h3>Margherita Pizza</h3>
+                <span class="dish-price">$12.99</span>
+              </div>
+              <p>Fresh mozzarella, tomatoes, basil on wood-fired crust</p>
+              <div class="dish-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(120)</span>
+              </div>
+              <button class="btn btn-primary dish-btn">
+                <i class="fas fa-shopping-cart"></i>
+                Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Dish 2 -->
+          <div class="dish-card" data-category="new">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500"
+                alt="Gourmet Burger"
+              />
+              <span class="dish-badge">New</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-header">
+                <h3>Gourmet Burger</h3>
+                <span class="dish-price">$15.99</span>
+              </div>
+              <p>Juicy beef patty with special sauce and fresh veggies</p>
+              <div class="dish-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(95)</span>
+              </div>
+              <button class="btn btn-primary dish-btn">
+                <i class="fas fa-shopping-cart"></i>
+                Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Dish 3 -->
+          <div class="dish-card" data-category="hot">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500"
+                alt="Grilled Chicken"
+              />
+              <span class="dish-badge">Hot</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-header">
+                <h3>Grilled Chicken</h3>
+                <span class="dish-price">$18.99</span>
+              </div>
+              <p>Tender grilled chicken with herbs and seasonal vegetables</p>
+              <div class="dish-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(78)</span>
+              </div>
+              <button class="btn btn-primary dish-btn">
+                <i class="fas fa-shopping-cart"></i>
+                Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Dish 4 -->
+          <div class="dish-card"  data-category="popular">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500"
+                alt="Pasta Carbonara"
+              />
+              <span class="dish-badge">Chef's Choice</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-header">
+                <h3>Pasta Carbonara</h3>
+                <span class="dish-price">$14.99</span>
+              </div>
+              <p>Creamy pasta with bacon, parmesan and black pepper</p>
+              <div class="dish-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(150)</span>
+              </div>
+              <button class="btn btn-primary dish-btn">
+                <i class="fas fa-shopping-cart"></i>
+                Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Dish 5 -->
+          <div class="dish-card" data-category="healthy">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500"
+                alt="Fresh Salad"
+              />
+              <span class="dish-badge">Healthy</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-header">
+                <h3>Fresh Garden Salad</h3>
+                <span class="dish-price">$9.99</span>
+              </div>
+              <p>Mixed greens with cherry tomatoes and vinaigrette</p>
+              <div class="dish-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(65)</span>
+              </div>
+              <button class="btn btn-primary dish-btn">
+                <i class="fas fa-shopping-cart"></i>
+                Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Dish 6 -->
+          <div class="dish-card" data-category="sweet">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500"
+                alt="Chocolate Dessert"
+              />
+              <span class="dish-badge">Sweet</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-header">
+                <h3>Chocolate Delight</h3>
+                <span class="dish-price">$8.99</span>
+              </div>
+              <p>Rich chocolate mousse with fresh berries topping</p>
+              <div class="dish-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(200)</span>
+              </div>
+              <button class="btn btn-primary dish-btn">
+                <i class="fas fa-shopping-cart"></i>
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- ============================================
+         WHY CHOOSE US SECTION
+    ============================================= -->
+    <section id="features" class="features">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title">
+            What Makes Us <span>Special</span>
+          </h2>
+          <p class="section-description">
+            We take pride in offering the best dining experience with
+            quality food, exceptional service, and a warm atmosphere.
+          </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Fresh Ingredients</h3>
+            <p>
+              We source only the freshest, locally-grown ingredients
+              to ensure every dish is bursting with flavor.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3>Expert Chefs</h3>
+            <p>
+              Our talented chefs bring years of experience and passion
+              to create memorable culinary masterpieces.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-truck-fast"></i>
+            </div>
+            <h3>Fast Service</h3>
+            <p>
+              Quick and efficient service ensures you enjoy your meal
+              without any unnecessary waiting time.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Cozy Atmosphere</h3>
+            <p>
+              A warm and welcoming environment perfect for family
+              dinners, romantic dates, or business meetings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- ============================================
+         CUSTOMER REVIEWS SECTION
+    ============================================= -->
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">
+            What Our <span>Customers</span> Say
+          </h2>
+          <p class="section-description">
+            Don't just take our word for it. Here's what our happy
+            customers have to say about their dining experience.
+          </p>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              "The best dining experience I've ever had! The food was
+              absolutely delicious, and the ambiance was perfect for
+              our anniversary dinner. Highly recommended!"
+            </p>
+            <div class="review-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Sarah Johnson"
+              />
+              <div>
+                <h4>Sarah Johnson</h4>
+                <span>Food Blogger</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              "The Spice House offers authentic flavors that transport
+              you straight to culinary heaven. Every dish was a
+              masterpiece. Will definitely come back again!"
+            </p>
+            <div class="review-author">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Michael Chen"
+              />
+              <div>
+                <h4>Michael Chen</h4>
+                <span>Restaurant Critic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              "Amazing food, wonderful service, and a cozy atmosphere.
+              The chef's special was outstanding. Perfect place for
+              family dinners and celebrations!"
+            </p>
+            <div class="review-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Emily Davis"
+              />
+              <div>
+                <h4>Emily Davis</h4>
+                <span>Regular Customer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- ============================================
+         CONTACT SECTION
+    ============================================= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">
+            Contact <span>Us</span>
+          </h2>
+          <p class="section-description">
+            Have a question or want to make a reservation?
+            We'd love to hear from you!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Info -->
+          <div class="contact-info">
+            <h3>Let's Talk!</h3>
+            <p>
+              Feel free to reach out to us for reservations,
+              inquiries, or feedback. We're here to help!
+            </p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4>Our Location</h4>
+                  <p>123 Spice Street, Food District, NY 10001</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h4>Call Us</h4>
+                  <p>+1 (234) 567-8900</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email Us</h4>
+                  <p>info@spicehouse.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h4>Opening Hours</h4>
+                  <p>Mon - Sun: 10:00 AM - 11:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Your Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="+1 234 567 8900"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Tell us what's on your mind..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary contact-btn">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1: About -->
+          <div class="footer-col">
+            <a href="#home" class="footer-logo">
+              <i class="fas fa-utensils"></i>
+              <span>The Spice House</span>
+            </a>
+            <p class="footer-text">
+              Experience authentic flavors and premium dining
+              at The Spice House. Where tradition meets taste.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#menu">Our Menu</a></li>
+              <li><a href="#features">Why Choose Us</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact -->
+          <div class="footer-col">
+            <h3>Contact Info</h3>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Spice Street, NY 10001</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>+1 (234) 567-8900</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@spicehouse.com</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Mon-Sun: 10AM - 11PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Newsletter -->
+          <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p class="footer-text">
+              Subscribe to get updates on special offers and events.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email" required />
+              <button type="submit">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Bottom Copyright -->
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 <span>The Spice House</span>. All Rights Reserved.
+            Made with <i class="fas fa-heart"></i> by
+            <span>Fahad Cheema</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+        <!-- ============================================
+         CART SIDEBAR
+    ============================================= -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+      <!-- Cart Header -->
+      <div class="cart-header">
+        <h2>
+          <i class="fas fa-shopping-cart"></i>
+          Your Cart
+        </h2>
+        <button class="cart-close" id="cartClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <!-- Cart Items Container -->
+      <div class="cart-items" id="cartItems">
+        <!-- Empty Cart Message (Default) -->
+        <div class="cart-empty" id="cartEmpty">
+          <i class="fas fa-shopping-basket"></i>
+          <h3>Your cart is empty</h3>
+          <p>Add some delicious dishes from our menu!</p>
+        </div>
+      </div>
+          </div>
+
+    <!-- ============================================
+         TOAST NOTIFICATION
+    ============================================= -->
+
+      <!-- Cart Footer with Total -->
+      <div class="cart-footer" id="cartFooter">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span class="total-price" id="totalPrice">$0.00</span>
+        </div>
+        <button class="btn btn-primary cart-checkout" id="checkoutBtn">
+          <i class="fas fa-credit-card"></i>
+          Checkout Now
+        </button>
+      </div>
+    </div>
+        <!-- ============================================
+         RESERVATION MODAL
+    ============================================= -->
+    <div class="modal-overlay" id="reservationOverlay"></div>
+
+    <div class="reservation-modal" id="reservationModal">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div>
+          <h2>
+            <i class="fas fa-calendar-check"></i>
+            Reserve Your Table
+          </h2>
+          <p>Book your dining experience with us</p>
+        </div>
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <!-- Reservation Form -->
+      <form class="reservation-form" id="reservationForm">
+        <!-- Row 1: Date & Time -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>
+              <i class="fas fa-calendar"></i>
+              Reservation Date
+            </label>
+            <input type="date" id="resDate" required />
+          </div>
+
+          <div class="form-group">
+            <label>
+              <i class="fas fa-clock"></i>
+              Reservation Time
+            </label>
+            <select id="resTime" required>
+              <option value="">Select Time</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="6:00 PM">6:00 PM</option>
+              <option value="7:00 PM">7:00 PM</option>
+              <option value="8:00 PM">8:00 PM</option>
+              <option value="9:00 PM">9:00 PM</option>
+              <option value="10:00 PM">10:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Row 2: Guests & Occasion -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>
+              <i class="fas fa-users"></i>
+              Number of Guests
+            </label>
+            <select id="resGuests" required>
+              <option value="">Select Guests</option>
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+              <option value="5">5 People</option>
+              <option value="6">6 People</option>
+              <option value="7">7 People</option>
+              <option value="8+">8+ People</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <i class="fas fa-glass-cheers"></i>
+              Occasion (Optional)
+            </label>
+            <select id="resOccasion">
+              <option value="Regular Dining">Regular Dining</option>
+              <option value="Birthday">Birthday</option>
+              <option value="Anniversary">Anniversary</option>
+              <option value="Business Meeting">Business Meeting</option>
+              <option value="Date Night">Date Night</option>
+              <option value="Family Gathering">Family Gathering</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Row 3: Name & Phone -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>
+              <i class="fas fa-user"></i>
+              Full Name
+            </label>
+            <input
+              type="text"
+              id="resName"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label>
+              <i class="fas fa-phone"></i>
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              id="resPhone"
+              placeholder="+1 234 567 8900"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label>
+            <i class="fas fa-envelope"></i>
+            Email Address
+          </label>
+          <input
+            type="email"
+            id="resEmail"
+            placeholder="john@example.com"
+            required
+          />
+        </div>
+
+        <!-- Special Requests -->
+        <div class="form-group">
+          <label>
+            <i class="fas fa-comment-alt"></i>
+            Special Requests (Optional)
+          </label>
+          <textarea
+            id="resRequests"
+            rows="3"
+            placeholder="Any dietary restrictions or special arrangements..."
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary reservation-submit">
+          <i class="fas fa-check-circle"></i>
+          Confirm Reservation
+        </button>
+      </form>
+    </div>
+
+    <!-- ============================================
+         TOAST NOTIFICATION
+    ============================================= -->
+    <div class="toast" id="toast">
+      <i class="fas fa-check-circle"></i>
+      <span class="toast-message" id="toastMessage">Item added to cart!</span>
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTop" class="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
